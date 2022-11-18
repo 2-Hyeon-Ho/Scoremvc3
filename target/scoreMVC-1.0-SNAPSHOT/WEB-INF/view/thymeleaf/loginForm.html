@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title th:text="#{adminLogin}"></title>
+</head>
+<body>
+    <form method="post" action="/">
+        <span th:text="#{adminId}":></span> <input type="text" name="id" /><br />
+        <span th:text="#{adminPwd}":></span> <input type="password" name="pwd" /><br />
+        <br />
+        <input type="submit" />
+    </form>
+    <br />
+    <a href="?locale=ko"><span th:text="#{languageKo}"></span></a>
+    <a href="?locale=en"><span th:text="#{languageEn}"></span></a>
+</body>
+</html>

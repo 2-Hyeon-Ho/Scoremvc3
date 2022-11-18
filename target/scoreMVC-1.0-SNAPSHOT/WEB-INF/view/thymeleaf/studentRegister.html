@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="#{titleStudentRegister}"> </title>
+</head>
+<body>
+    <form method="post" action="/student/register">
+        <span th:text="#{studentName}":></span> <input type="text" name="name" /><br />
+        <span th:text="#{studentEmail}":></span> <input type="text" name="email" /><br />
+        <span th:text="#{studentGrade}":></span> <input type="text" name="score" /><br />
+        <span th:text="#{studentAppraisal}":></span> <textarea name="comment" rows="10" cols="80"></textarea><br />
+        <input type="submit" />
+    </form>
+    <br />
+    <a href="/logout"><span th:text="#{logout}"></span></a><br />
+</body>
+</html>

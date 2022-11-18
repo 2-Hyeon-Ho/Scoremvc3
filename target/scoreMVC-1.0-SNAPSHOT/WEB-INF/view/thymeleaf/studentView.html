@@ -1,0 +1,16 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="#{titleStudentView}"></title>
+</head>
+<body>
+<span th:text="#{studentId}":></span> <span th:text = "${student.id}"></span><br />
+<span th:text="#{studentName}":></span> <span th:text = "${student.name}"></span><br />
+<span th:text="#{studentEmail}":></span> <span th:text = "${student.email}"></span><br />
+<span th:text="#{studentGrade}":></span> <span th:text = "${student.score}"></span><br />
+<span th:text="#{studentAppraisal}":></span> <span th:text = "${student.comment}"></span><br />
+<br />
+<a th:href="@{/student/{studentId}/modify(studentId=${student.id})}"><span th:text="#{studentDataModify}":></span></a><br />
+<a href="/student/register"><span th:text="#{studentHome}"></span></a><br />
+</body>
+</html>

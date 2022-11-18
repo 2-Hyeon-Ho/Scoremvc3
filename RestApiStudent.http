@@ -1,0 +1,25 @@
+###학생 정보 등록
+POST localhost:8060/students
+Content-Type: application/json
+
+{
+  "name":"이현호",
+  "email":"hyeonho@gmail.com",
+  "score":59,
+  "comment":"아쉽다"
+}
+
+###학생 정보 조회
+GET localhost:8060/students/1
+Content-Type: application/json
+
+###학생 정보 수정
+PUT localhost:8060/students/1/modify
+Content-Type: application/json
+
+{
+  "name":"수정된 이름",
+  "email":"modify@gmail.com",
+  "score":10,
+  "comment":"아쉽다"
+}
